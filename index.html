@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinotrh Wine Truck — Hradní ulice, Znojmo</title>
+  <meta name="description" content="Vinotrh Wine Truck stojí na Hradní ulici ve Znojmě. Moravská vína, káva, koktejly a limonády — přijďte ochutnat." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="mainNav">
+    <a class="nav__logo" href="#hero">
+      <img src="assets/images/logo/vinotrh_logo.png" alt="Vinotrh" />
+    </a>
+    <ul class="nav__links">
+      <li><a href="#about">O stánku</a></li>
+      <li><a href="#menu">Nápojový lístek</a></li>
+      <li><a href="#gallery">Galerie</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+      <li><a class="nav__cta" href="#contact">Kde nás najdete</a></li>
+    </ul>
+    <button class="nav__hamburger" id="navHamburger" aria-label="Otevřít menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+    <ul>
+      <li><a href="#about">O stánku</a></li>
+      <li><a href="#menu">Nápojový lístek</a></li>
+      <li><a href="#gallery">Galerie</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+    <a class="btn btn--outline nav__mobile__cta" href="#contact">Kde nás najdete</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <span class="hero__deco" aria-hidden="true">VÍNO</span>
+    <div class="hero__content">
+      <span class="hero__eyebrow">Vinotrh Wine Truck · Hradní ulice, Znojmo</span>
+      <h1 class="hero__headline">
+        wine &amp;<br /><em>people</em>
+      </h1>
+      <p class="hero__sub">
+        Náš Wine Truck stojí na Hradní ulici ve Znojmě. Moravská vína, káva, míchané nápoje a limonády — přijďte ochutnat přímo ve městě.
+      </p>
+      <div class="hero__tags">
+        <span class="hero__tag">drink</span>
+        <span class="hero__tag">meet</span>
+        <span class="hero__tag">feel</span>
+        <span class="hero__tag">enjoy</span>
+      </div>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#menu">Nápojový lístek</a>
+        <a class="btn btn--outline" href="#about">O stánku</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9"/>
+      </svg>
+      scroll
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="about fade-in">
+      <div class="about__text">
+        <span class="section__label">O stánku</span>
+        <h2 class="section__title">Váš oblíbený stánek ve Znojmě</h2>
+        <p class="section__lead">
+          Wine Truck Vinotrh je prodejní stánek na bázi Renault Master, který trvale stojí na Hradní ulici ve Znojmě. Najdete tu pečlivě vybraná moravská vína ze Znojemska, čerstvou kávu, koktejly i nealkoholické nápoje.
+        </p>
+        <div class="about__features">
+          <div class="feature-card fade-in">
+            <div class="feature-card__num">01</div>
+            <div>
+              <div class="feature-card__title">Pivo, koktejly & káva</div>
+              <div class="feature-card__text">Čepované pivo, míchané drinky, espresso, čerstvé limonády i zmrzlina — vše na jednom místě.</div>
+            </div>
+          </div>
+          <div class="feature-card fade-in">
+            <div class="feature-card__num">02</div>
+            <div>
+              <div class="feature-card__title">Hradní ulice, Znojmo</div>
+              <div class="feature-card__text">Pevné stanoviště přímo v centru města — snadný přístup, příjemné posezení.</div>
+            </div>
+          </div>
+          <div class="feature-card fade-in">
+            <div class="feature-card__num">03</div>
+            <div>
+              <div class="feature-card__title">Součást Vinotrhu</div>
+              <div class="feature-card__text">Wine Truck je součástí Vinotrhu — znojemského konceptu zaměřeného na víno, lidi a zážitky.</div>
+            </div>
+          </div>
+          <div class="feature-card fade-in">
+            <div class="feature-card__num">04</div>
+            <div>
+              <div class="feature-card__title">Sezóna 2026</div>
+              <div class="feature-card__text">15. 6. – 30. 9. 2026, každý den od 10:00 do 22:00.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about__visual fade-in">
+        <img
+          class="about__img"
+          src="Foto_auto/IMG_9043.jpeg"
+          alt="Vinotrh Wine Truck — boční pohled"
+          loading="lazy"
+        />
+        <div class="about__badge">
+          <strong>Vinotrh</strong>
+          <span>součást konceptu</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu-section" id="menu">
+    <div class="menu-header fade-in">
+      <div>
+        <span class="section__label">Nápojový lístek</span>
+        <h2 class="section__title">Co u nás najdete</h2>
+        <p class="section__lead">Všechny ceny jsou konečné včetně DPH.</p>
+      </div>
+    </div>
+
+    <div class="menu-grid">
+
+      <!-- NÁPOJE -->
+      <div class="menu-category fade-in">
+        <h3 class="menu-cat__title">Nápoje</h3>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <span class="menu-item__name">Pivo 11° <em>0,5 l</em></span>
+            <span class="menu-item__price">50 Kč</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item__name">Pivo 11° <em>0,3 l</em></span>
+            <span class="menu-item__price">40 Kč</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item__name">Pivo 8° <em>0,5 l</em></span>
+            <span class="menu-item__price">50 Kč</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item__name">Pivo 8° <em>0,3 l</em></span>
+            <span class="menu-item__price">35 Kč</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item__name">Limonáda <em>0,5 l</em></span>
+            <span class="menu-item__price">50 Kč</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item__name">Limonáda <em>0,3 l</em></span>
+            <span class="menu-item__price">40 Kč</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item__name">Hroznová limonáda <em>0,4 l</em></span>
+            <span class="menu-item__price">70 Kč</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item__name">Meruňková limonáda <em>0,4 l</em></span>
+            <span class="menu-item__price">90 Kč</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item__name">Voda PET <em>0,5 l</em></span>
+            <span class="menu-item__price">30 Kč</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- KOKTEJLY & PROSECCO -->
+      <div class="menu-category fade-in">
+        <h3 class="menu-cat__title">Koktejly &amp; Prosecco</h3>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <span class="menu-item__name">Aperol Spritz</span>
+            <span class="menu-item__price">120 Kč</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item__name">Aperol nealko</span>
+            <span class="menu-item__price">120 Kč</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item__name">Limoncello</span>
+            <span class="menu-item__price">120 Kč</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item__name">Italicus Spritz</span>
+            <span class="menu-item__price">120 Kč</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item__name">Hugo</span>
+            <span class="menu-item__price">100 Kč</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item__name">Cuba Libre</span>
+            <span class="menu-item__price">100 Kč</span>
+          </li>
+          <li class="menu-item menu-item--divider">
+            <span class="menu-item__name">Prosecco <em>0,1 l</em></span>
+            <span class="menu-item__price">50 Kč</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- KÁVA -->
+      <div class="menu-category fade-in">
+        <h3 class="menu-cat__title">Káva</h3>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <span class="menu-item__name">Espresso / Lungo</span>
+            <span class="menu-item__price">60 Kč</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item__name">Espresso doppio</span>
+            <span class="menu-item__price">95 Kč</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item__name">Cappuccino</span>
+            <span class="menu-item__price">70 Kč</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item__name">Latte macchiato</span>
+            <span class="menu-item__price">75 Kč</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item__name">Flat white</span>
+            <span class="menu-item__price">90 Kč</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item__name">Affogato</span>
+            <span class="menu-item__price">95 Kč</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item__name">Ledová káva</span>
+            <span class="menu-item__price">65 Kč</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ZMRZLINA -->
+      <div class="menu-category fade-in">
+        <h3 class="menu-cat__title">Zmrzlina</h3>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <span class="menu-item__name">Kopeček</span>
+            <span class="menu-item__price">30 Kč</span>
+          </li>
+          <li class="menu-item">
+            <span class="menu-item__name">Kelímek</span>
+            <span class="menu-item__price">5 Kč</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section" id="gallery">
+    <div class="gallery-header fade-in">
+      <div>
+        <span class="section__label">Galerie</span>
+        <h2 class="section__title">Wine Truck zblízka</h2>
+        <p class="section__lead">Prodejní stánek navržený s důrazem na detail a vizuální identitu značky Vinotrh.</p>
+      </div>
+      <a class="btn btn--outline" href="#contact">Kde nás najdete</a>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-grid__item fade-in">
+        <img src="Foto_auto/IMG_9043.jpeg" alt="Wine Truck — celkový pohled" loading="lazy" />
+      </div>
+      <div class="gallery-grid__item fade-in">
+        <img src="Foto_auto/IMG_9038.jpeg" alt="Wine Truck — boční detail" loading="lazy" />
+      </div>
+      <div class="gallery-grid__item fade-in">
+        <img src="Foto_auto/IMG_9039.jpeg" alt="Wine Truck — zadní panel" loading="lazy" />
+      </div>
+      <div class="gallery-grid__item fade-in">
+        <img src="Foto_auto/IMG_9040.jpeg" alt="Wine Truck — přední pohled" loading="lazy" />
+      </div>
+      <div class="gallery-grid__item fade-in">
+        <img src="assets/images/bg/hero_komplet.jpg" alt="Vinotrh — wine &amp; people" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+
+      <div class="contact-left fade-in">
+        <span class="section__label">Kde nás najdete</span>
+        <h2 class="section__title">Přijďte za námi na Hradní</h2>
+        <p class="section__lead">
+          Stojíme na Hradní ulici ve Znojmě. Stavte se na sklenku vína, kávu nebo koktejl — rádi vás uvidíme.
+        </p>
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-item__label">Adresa</div>
+              <div class="contact-item__value">Hradní ulice, Znojmo</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-item__label">Otevírací doba</div>
+              <div class="contact-item__value">Každý den 10:00 – 22:00<br /><small>Sezóna 15. 6. – 30. 9. 2026</small></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <polyline points="2,4 12,13 22,4"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-item__label">E-mail</div>
+              <div class="contact-item__value"><a href="mailto:truck@vinotrh.cz">truck@vinotrh.cz</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-item__label">Web</div>
+              <div class="contact-item__value"><a href="https://www.vinotrh.cz" target="_blank" rel="noopener">www.vinotrh.cz</a></div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="btn btn--nav"
+          href="https://www.google.com/maps/dir/?api=1&destination=Hradn%C3%AD+ulice%2C+Znojmo"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+            <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+          </svg>
+          Navigovat
+        </a>
+      </div>
+
+      <div class="contact-right fade-in">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Jméno a příjmení</label>
+            <input type="text" id="name" name="name" placeholder="Jan Novák" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="jan@firma.cz" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" placeholder="+420 777 123 456" />
+          </div>
+          <div class="form-group">
+            <label for="message">Zpráva</label>
+            <textarea id="message" name="message" placeholder="Vaše dotazy, připomínky nebo zpráva pro nás..."></textarea>
+          </div>
+          <button class="btn btn--dark" type="submit">Odeslat zprávu</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="contact-map">
+      <iframe
+        src="https://maps.google.com/maps?q=Hradn%C3%AD+ulice%2C+Znojmo&output=embed&hl=cs"
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Vinotrh Wine Truck — Hradní ulice, Znojmo"
+      ></iframe>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a class="footer__logo" href="https://www.vinotrh.cz" target="_blank" rel="noopener">
+      <img src="assets/images/logo/vinotrh_logo.png" alt="Vinotrh" />
+    </a>
+    <span class="footer__tagline">drink · meet · feel · enjoy</span>
+    <div class="footer__right">
+      <div class="footer__social">
+        <a href="https://www.instagram.com/vinotrh.cz/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="4.5"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/vinotrh" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+          </svg>
+        </a>
+      </div>
+      <span class="footer__copy">&copy; 2025 <a href="https://www.vinotrh.cz" target="_blank" rel="noopener">vinotrh.cz</a></span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
