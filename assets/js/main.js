@@ -40,6 +40,53 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', closeMenu);
   });
 
+  // Lightbox
+  const lightbox     = document.getElementById('lightbox');
+  const lightboxImg  = document.getElementById('lightboxImg');
+  const lightboxCap  = document.getElementById('lightboxCaption');
+  const lightboxCnt  = document.getElementById('lightboxCounter');
+  const lightboxBack = lightbox.querySelector('.lightbox__backdrop');
+
+  const galleryItems = [...document.querySelectorAll('[data-lightbox]')];
+  let currentIndex = 0;
+
+  function openLightbox(index) {
+    currentIndex = index;
+    const img = galleryItems[index].querySelector('img');
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightboxCap.textContent = img.alt;
+    lightboxCnt.textContent = `${index + 1} / ${galleryItems.length}`;
+    lightbox.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  function showPrev() {
+    openLightbox((currentIndex - 1 + galleryItems.length) % galleryItems.length);
+  }
+
+  function showNext() {
+    openLightbox((currentIndex + 1) % galleryItems.length);
+  }
+
+  galleryItems.forEach((item, i) => item.addEventListener('click', () => openLightbox(i)));
+  document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+  document.getElementById('lightboxPrev').addEventListener('click', showPrev);
+  document.getElementById('lightboxNext').addEventListener('click', showNext);
+  lightboxBack.addEventListener('click', closeLightbox);
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('is-open')) return;
+    if (e.key === 'Escape')    closeLightbox();
+    if (e.key === 'ArrowLeft')  showPrev();
+    if (e.key === 'ArrowRight') showNext();
+  });
+
   const form = document.getElementById('contactForm');
   if (form) {
     form.addEventListener('submit', (e) => {
