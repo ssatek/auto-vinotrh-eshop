@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = '';
   }
 
+  document.getElementById('mobileMenuClose').addEventListener('click', closeMenu);
+
   hamburger.addEventListener('click', () => {
     const isOpen = hamburger.classList.toggle('is-open');
     mobileMenu.classList.toggle('is-open', isOpen);
