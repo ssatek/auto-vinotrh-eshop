@@ -1155,6 +1155,7 @@ a { color: inherit; text-decoration: none; }
   .gallery-grid { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
   .gallery-grid__item:nth-child(n) { grid-column: span 1; }
   .gallery-grid__item:nth-child(1) { grid-column: span 2; }
+  .hero { padding-top: 5rem; align-items: flex-start; padding-bottom: 3rem; }
   .hero__content { padding: 0 5%; }
   .hero::before { display: none; }
   .about__badge { left: 0.5rem; }
