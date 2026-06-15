@@ -70,6 +70,7 @@ a { color: inherit; text-decoration: none; }
 
 .nav.is-scrolled {
   background: rgba(61, 26, 26, 0.96);
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   padding: 1rem 5%;
 }
@@ -114,6 +115,7 @@ a { color: inherit; text-decoration: none; }
 .hero {
   position: relative;
   min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -419,6 +421,7 @@ a { color: inherit; text-decoration: none; }
   width: 100%;
   object-fit: cover;
   aspect-ratio: 3/4;
+  height: auto;
   display: block;
 }
 
@@ -590,6 +593,7 @@ a { color: inherit; text-decoration: none; }
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  aspect-ratio: 4/3;
 }
 
 .gallery-grid__item::after {
@@ -634,7 +638,6 @@ a { color: inherit; text-decoration: none; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  aspect-ratio: 4/3;
   display: block;
   transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
