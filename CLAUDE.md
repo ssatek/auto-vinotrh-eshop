@@ -8,7 +8,13 @@ Sezóna: **15. 6. – 30. 9. 2026**, otevřeno každý den 10:00–22:00.
 ## Stack
 - Čistý HTML/CSS/JS — žádný framework, žádné build nástroje
 - Fonty: **Barlow** (display/nadpisy) + **DM Sans** (tělo) — Google Fonts
-- Deploy: statický hosting (Vercel / Netlify / GitHub Pages)
+- Deploy: Vercel (auto-deploy z GitHub)
+
+## Deploy & URL
+- GitHub: https://github.com/ssatek/auto-vinotrh-eshop
+- Vercel: https://auto-vinotrh-eshop.vercel.app
+- Produkční doména: https://truck.vinotrh.cz (CNAME na Websupport — čeká na propagaci DNS)
+- Workflow: `git push` → Vercel automaticky deployuje
 
 ## Spuštění
 Otevřít `index.html` přímo v prohlížeči nebo spustit přes live server:
@@ -56,8 +62,20 @@ Paleta odvozena z polepy Wine Trucku (Foto_auto/IMG_9043.jpeg).
 1. **Hero** — fullscreen, vineyard background, "wine & people" headline
 2. **O stánku** — popis + 4 feature cards + foto (badge: Vinotrh / součást konceptu)
 3. **Nápojový lístek** — 4 kategorie: Nápoje, Koktejly & Prosecco, Káva, Zmrzlina
-4. **Galerie** — CSS grid s 5 fotkami auta
+4. **Galerie** — CSS grid s 5 fotkami auta + lightbox (klávesy ESC/šipky, blur overlay, caption)
 5. **Kontakt** — adresa, otevírací doba, e-mail, web + formulář + vložená Google Mapa
+
+## Mobilní menu
+- Hamburger tlačítko v navu otevírá fullscreen overlay
+- Zavírání: křížek (pravý horní roh), klik na odkaz, nebo JS `closeMenu()`
+
+## Responzivní poznámky
+- Hero na mobilu: `padding-top: 5rem; align-items: flex-start` — aby eyebrow text nepřekrýval fixní nav
+
+## Safari kompatibilita
+- Nav blur: `-webkit-backdrop-filter` prefix nutný
+- Hero výška: `min-height: 100svh` (iOS URL bar)
+- Galerie: `aspect-ratio` na kontejneru `.gallery-grid__item`, ne na `img`
 
 ## Nápojový lístek — zdroj dat
 Ceník: `assets/wine truck ceník.xlsx`
@@ -69,7 +87,7 @@ Ceník: `assets/wine truck ceník.xlsx`
 
 ## Kontaktní info na stránce
 - Adresa: Hradní ulice, Znojmo
-- Otevírací doba: každý den 10:00–22:00 (sezóna 15. 6. – 30. 9. 2026)
+- Otevírací doba: Po–Čt 11:00–22:00, Pá–Ne 10:00–22:00 (sezóna 15. 6. – 30. 9. 2026)
 - E-mail: truck@vinotrh.cz
 - Web: www.vinotrh.cz
 - Google Mapa: vložená jako iframe (search query: Hradní ulice, Znojmo)
